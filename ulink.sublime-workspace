@@ -1,0 +1,376 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"prd",
+				"prdt-sort"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"d",
+				"dashed"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"bord",
+				"border-width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"cssc",
+				"Run CSScomb"
+			],
+			[
+				"css",
+				"Run CSScomb"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"emmet ",
+				"Emmet: Balance (inward)"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove p",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"tag",
+				"Tag: Insert as Tag"
+			],
+			[
+				"tag ",
+				"Tag: Rename"
+			],
+			[
+				"csscom",
+				"Run CSScomb"
+			],
+			[
+				"cssco",
+				"Run CSScomb"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"INST",
+				"Package Control: Install Package"
+			],
+			[
+				"vie",
+				"View In Browser"
+			],
+			[
+				"",
+				"Autoprefix CSS"
+			],
+			[
+				"ins",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 344.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/E/360云盘/WEB/Ulink/css/style_standard.css",
+		"/E/360云盘/WEB/Ulink/ftpsync.settings",
+		"/E/360云盘/WEB/Ulink/ulink.sublime-project",
+		"/E/360云盘/WEB/Ulink/Products1.html",
+		"/E/360云盘/WEB/Ulink/js/jPages.js",
+		"/E/360云盘/WEB/Ulink/js/jquery.page.min.js",
+		"/E/360云盘/WEB/Ulink/js/jquery.pagination.js",
+		"/C/Users/Administrator/Desktop/pd-e29458dc-5117-11e4-bb9b-00163e001348/jPages-master/js/jPages.js",
+		"/E/360云盘/WEB/Ulink/css/style_standard.min.css",
+		"/E/360云盘/WEB/Ulink/products.html",
+		"/E/360云盘/WEB/Ulink/js/zealer-jquery.flexslider-min.js",
+		"/E/360云盘/WEB/Ulink/index.html",
+		"/E/360云盘/WEB/Ulink/js/fixedsider.js",
+		"/E/360云盘/WEB/Ulink/js/zealer-jquery.easing.min.js",
+		"/E/360云盘/WEB/Ulink-test2/js/zealer-jquery.flexslider-min.js",
+		"/E/360云盘/WEB/Ulink-test2/js/zealer-jquery.easing.min.js",
+		"/E/360云盘/WEB/Ulink/css/search.css",
+		"/E/360云盘/WEB/Ulink/js/backtop.js",
+		"/E/360云盘/WEB/Ulink/js/jquery.easing.min.js",
+		"/E/360云盘/WEB/Ulink/home.html",
+		"/E/360云盘/WEB/Ulink/color.html",
+		"/E/360云盘/WEB/Ulink/service.html",
+		"/E/360云盘/WEB/Ulink/contact.html",
+		"/E/360云盘/WEB/Ulink/about.html",
+		"/E/360云盘/WEB/Ulink/css/flexslider.css",
+		"/E/360云盘/WEB/Ulink/test3.html",
+		"/E/360云盘/WEB/Ulink/test1.html",
+		"/E/360云盘/WEB/Ulink/js/fixtop.js",
+		"/E/360云盘/WEB/Ulink/js/fixed_sort.js",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/CSScomb/README.md",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Tag/Tag Package.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/HTMLBeautify/HTMLBeautify.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/HTMLBeautify.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/E/360云盘/VB/学习项目/MD5/MD5/Form1.vb",
+		"/H/CK/1Cam-截屏-数据-8天-搜索-中文/GeneralBox/FormMain.vb",
+		"/H/CK/西可手机盒检测-1022-B精度-定位跟踪共用定位/西可电子v1/FormMain.vb",
+		"/H/CK/西可电池仓-1011-锁定-截屏-删除-已测/GeneralBox/FormSetPW.vb",
+		"/H/CK/西可电池仓-0821/GeneralBox/FormMain.vb",
+		"/H/CK/西可电池仓-1011-锁定-截屏-删除-已测/GeneralBox/FormPW.vb",
+		"/H/CK/西可手机盒检测-1009-输出延时50ms/西可电子v1/FormMain.vb"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"fixedm",
+			"fixed",
+			"45",
+			"5px",
+			"hidden",
+			"backtop",
+			"bactop",
+			"shadow",
+			"radius",
+			"rau",
+			"ra",
+			"helvetica",
+			"arial",
+			"href",
+			"a",
+			"<a href=\"#1\">",
+			"a",
+			"Products sort1",
+			"width",
+			"heigh",
+			"                   ",
+			"  ",
+			"•",
+			"1em",
+			"000",
+			"b",
+			" <",
+			"b",
+			"fixed_sort",
+			"Arial",
+			"运行",
+			"mAcqFifo",
+			"sleep"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"project": "ulink.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 227.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

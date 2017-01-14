@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Scanner</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="../css/style_standard.css" />
+	<link href='http://fonts.useso.com/css?family=Hind:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
+	<script src="../js/navlevel2.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+    		jQuery.navlevel2 = function(level1,dytime) {
+     	 		$(level1).mouseenter(function(){
+         			varthis = $(this);
+         			delytime=setTimeout(function(){
+          			varthis.find('ul').slideDown();
+        			},dytime);
+      			});
+      			$(level1).mouseleave(function(){
+         			clearTimeout(delytime);
+        			$(this).find('ul').slideUp();
+     			});
+
+    		};
+  				$.navlevel2("#nav ul li",59);
+		});
+	</script>
+	<script type="text/javascript" src="../js/fixedsider.js"></script>
+	<script type="text/javascript" src="../js/jquery.backtop.js"></script>
+	<script type="text/javascript" src="../js/jquery.backtop.goup.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+
+            $.goup({
+                trigger: 150,
+                location: 'right',
+                bottomOffset: 100,
+                locationOffset: 160,
+                containerRadius:0,
+                goupSpeed: 'slow',
+                title: 'BACK TOP',
+                titleAsText: false
+            });
+
+        });
+    </script>
+	<script type="text/javascript">
+    $(function () {
+        var ie6 = document.all;
+        var dv = $('#fixedMenu'), st;
+        dv.attr('otop', dv.offset().top); //存储原来的距离顶部的距离
+        $(window).scroll(function () {
+            st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
+            if (st > parseInt(dv.attr('otop'))) {
+                if (ie6) {//IE6不支持fixed属性，所以只能靠设置position为absolute和top实现此效果
+                    dv.css({ position: 'absolute', top: st ,left:0});
+                }
+                else if (dv.css('position') != 'fixed') dv.css({ 'position': 'fixed', top: 0 ,left:0});
+            } else if (dv.css('position') != 'static') dv.css({ 'position': 'static' });
+        });
+    });
+</script>
+</head>
+
+<body>
+	<div id="main">
+		<a name="top"></a>
+		<!--header top nav .start-->
+		<header id="main-head">
+			<div id="logo_sns">
+				<div id="logo">
+					<a href="../index.html">
+						<img src="http://ulink.byethost12.com/img/LOGO-B.png" title="ULINK" />
+					</a>
+				</div>
+				<div id="slogan">You link us.</div>
+				<div class="social-icons">
+					<div class="facebook">
+						<a href="#"></a>
+					</div>
+					<div class="twitter">
+						<a href="#"></a>
+					</div>
+					<div class="skype">
+						<a href="#"></a>
+					</div>
+					<div class="googleplus">
+						<a href="#"></a>
+					</div>
+				</div>
+				<div id="clear"></div>
+			</div>
+			<div id="nav-bar">
+				<div id="nav">
+					<ul>
+						<li>
+							<a href="../home.html">Home</a>
+						</li>
+						<li>
+							<a href="../products.html">Products</a>
+							<ul>
+								<li>
+									<a href="../products/smart home.html">Smart Home</a>
+								</li>
+								<li>
+									<a href="../products/printer.html">Printer</a>
+								</li>
+								<li>
+									<a href="../products/scanner.html">Scanner</a>
+								</li>
+								<li>
+									<a href="../products/mini pc.html">Mini PC</a>
+								</li>
+								<li>
+									<a href="../products/xbox hard disk.html">Xbox Hard Disk</a>
+								</li>
+								<li>
+									<a href="../products/speaker.html">Speaker</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="../service.html">Service</a>
+						</li>
+						<li>
+							<a href="../contact.html">Contact</a>
+						</li>
+						<li>
+							<a href="../about.html">About</a>
+						</li>
+					</ul>
+				</div>
+				<div id="search">
+					<form method="get" id="searchform" action="http://www.google.com/search">
+						<input type="hidden" name="domains" value="http://ulink.byethost12.com/" />
+						<input type="hidden" name="sitesearch" value="ulink.byethost12.com" />
+						<input type="text" name="q" size="31" class="field" id="s" placeholder="Search" maxlength="255" value="" />
+						<input type="hidden" name="ie" value="utf-8" />
+						<input type="hidden" name="oe" value="utf-8" />
+						<input type="hidden" name="hl" value="" />
+						<label for="s" class="assistive-text">Search</label>
+						<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+						<button type="submit" name="search" id="search-subimit" class="search-submit " onclick="onsubmit" ></button>
+					</form>
+				</div>
+			</div>
+		</header>
+		<!--header top nav .end-->
+		<!--banner2 Start-->
+		<div class="product-head1">
+			<div class="product-head2" id="fixedMenu">
+				<div class="product-head3">
+					<h3 class="product-name">
+						<a href="../products.html">Products</a>
+						&nbsp;/&nbsp;Scanner
+					</h3>
+				</div>
+			</div>
+		</div>
+		<section class="show">
+			<article class="show-col">
+				<div class="prdt-show">
+					<a href="scanner/2.html">
+						<div class="prdt-img">
+							<img src="../products/p4.jpg" alt="prdt1" />
+						</div>
+						<div class="sale-new">
+							<span class="new">New</span>
+						</div>
+						<aside class="prft-asider">
+							<div class="caption">
+								<h5>POS Printer 5890T</h5>
+								<div class="price">
+									<span class="actual">$59.00</span>
+								</div>
+							</div>
+						</aside>
+						<div class="description-region">
+							<div class="description">
+								<p>Small</p>
+								<p>High print quality</p>
+								<p>Light Weight Beautiful Shape</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="prdt-show">
+					<a href="#">
+						<div class="prdt-img">
+							<img src="../products/p2.jpg" alt="prdt1" />
+						</div>
+						<div class="sale-new">
+							<span class="new">New</span>
+						</div>
+						<aside class="prft-asider">
+							<div class="caption">
+								<h5>POS Printer 5890T</h5>
+								<div class="price">
+									<span class="actual">$59.00</span>
+								</div>
+							</div>
+						</aside>
+						<div class="description-region">
+							<div class="description">
+								<p>Small</p>
+								<p>High print quality</p>
+								<p>Light Weight Beautiful Shape</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="prdt-show">
+					<a href="#">
+						<div class="prdt-img">
+							<img src="../products/p1.jpg" alt="prdt1" />
+						</div>
+						<aside class="prft-asider">
+							<div class="caption">
+								<h5>POS Printer 5890T</h5>
+								<div class="price">
+									<span class="actual">$59.00</span>
+								</div>
+							</div>
+						</aside>
+						<div class="description-region">
+							<div class="description">
+								<p>Small</p>
+								<p>High print quality</p>
+								<p>Light Weight Beautiful Shape</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="prdt-show">
+					<a href="#">
+						<div class="prdt-img">
+							<img src="../products/p2.jpg" alt="prdt1" />
+						</div>
+						<aside class="prft-asider">
+							<div class="caption">
+								<h5>POS Printer 5890T</h5>
+								<div class="price">
+									<span class="actual">$59.00</span>
+								</div>
+							</div>
+						</aside>
+						<div class="description-region">
+							<div class="description">
+								<p>Small</p>
+								<p>High print quality</p>
+								<p>Light Weight Beautiful Shape</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="clear"></div>
+			</article>
+			<article class="show-col">
+				<div class="prdt-show">
+					<a href="#">
+						<div class="prdt-img">
+							<img src="../products/p3.jpg" alt="prdt1" />
+						</div>
+						<aside class="prft-asider">
+							<div class="caption">
+								<h5>POS Printer 5890T</h5>
+								<div class="price">
+									<span class="actual">$59.00</span>
+								</div>
+							</div>
+						</aside>
+						<div class="description-region">
+							<div class="description">
+								<p>Small</p>
+								<p>High print quality</p>
+								<p>Light Weight Beautiful Shape</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="prdt-show">
+					<a href="#">
+						<div class="prdt-img">
+							<img src="../products/p2.jpg" alt="prdt1" />
+						</div>
+						<aside class="prft-asider">
+							<div class="caption">
+								<h5>POS Printer 5890T</h5>
+								<div class="price">
+									<span class="actual">$59.00</span>
+								</div>
+							</div>
+						</aside>
+						<div class="description-region">
+							<div class="description">
+								<p>Small</p>
+								<p>High print quality</p>
+								<p>Light Weight Beautiful Shape</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="prdt-show">
+					<a href="#">
+						<div class="prdt-img">
+							<img src="../products/p5.jpg" alt="prdt1" />
+						</div>
+						<aside class="prft-asider">
+							<div class="caption">
+								<h5>POS Printer 5890T</h5>
+								<div class="price">
+									<span class="actual">$59.00</span>
+								</div>
+							</div>
+						</aside>
+						<div class="description-region">
+							<div class="description">
+								<p>Small</p>
+								<p>High print quality</p>
+								<p>Light Weight Beautiful Shape</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="prdt-show">
+					<a href="#">
+						<div class="prdt-img">
+							<img src="../products/p6.jpg" alt="prdt1" />
+						</div>
+						<aside class="prft-asider">
+							<div class="caption">
+								<h5>POS Printer 5890T</h5>
+								<div class="price">
+									<span class="actual">$59.00</span>
+								</div>
+							</div>
+						</aside>
+						<div class="description-region">
+							<div class="description">
+								<p>Small</p>
+								<p>High print quality</p>
+								<p>Light Weight Beautiful Shape</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="clear"></div>
+			</article>
+			<div class="clear"></div>
+		</section>
+		<!--banner2 End-->
+	</div>
+	<!--footer .start-->
+	<footer id="foot">
+		<div class="main">
+			<section id="bottom-show">
+				<article id="address">
+					<h2 class="head2">contact us</h2>
+					<p>
+						Address: COLI , Qinghui Road, Longgang Center Town, longgang, shenzhen, Guangdong, China
+					</p>
+					<p>Post Code: 518000</p>
+					<p>Tel: (86) 757 86902810 86902806</p>
+					<p>Fax: (86) 757 86902801</p>
+					<p>
+						E-mail:
+						<a href="mailto:mavisworld0707@gmail.com?subject=Website%20Consult">mavisworld0707@gmail.com</a>
+					</p>
+				</article>
+				<article id="contact">
+					<h2 class="head2">SNS</h2>
+					<div class="social-icons">
+						<div class="facebook">
+							<a href="#"></a>
+						</div>
+						<div class="twitter">
+							<a href="#"></a>
+						</div>
+						<div class="skype">
+							<a href="#"></a>
+						</div>
+						<div class="googleplus">
+							<a href="#"></a>
+						</div>
+						<div class="facebook">
+							<a href="#"></a>
+						</div>
+						<div class="twitter">
+							<a href="#"></a>
+						</div>
+						<div class="skype">
+							<a href="#"></a>
+						</div>
+						<div class="googleplus">
+							<a href="#"></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</article>
+			</section>
+			<div class="clear"></div>
+
+			<p id="copyright">
+				Copyright&copy;2015 ULink Electronics Technology Co.,Ltd.│
+				<a href="#"> All rights reserved.</a>
+			</p>
+		</div>
+	</footer>
+	<!--footer .end-->
+</body>
+
+</html>

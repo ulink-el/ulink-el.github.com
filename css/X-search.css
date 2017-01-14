@@ -1,0 +1,151 @@
+input[type=text],
+input[type=password],
+textarea
+{
+    border: 2px #fff solid;
+    background: #fff;
+    /*搜索框内阴影 start*/
+    /*-moz-box-shadow: inset 2px 2px 10px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1);
+	box-shadow: inset 2px 2px 10px rgba(0,0,0,0.1);*/
+    /*搜索框阴影 end*/
+    /*color: #fff;*/
+}
+input[type=text]:focus,
+textarea:focus
+{
+    /*color:#000;*/
+	/*border: 0px antiquewhite solid;*/
+}
+input#s
+{
+    font-size: 14px;
+
+    height: 24px;
+    padding: 3px 10px 3px 10px;
+
+    -moz-border-radius: 16px;
+         border-radius: 16px;
+    /*line-height: 1.2em;*/
+}
+.assistive-text
+{
+    position: absolute !important;
+    /*隐藏search文字*/
+
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(10px, 10px, 10px, 10px);
+    /*裁剪图像*/
+}
+#nav-top-search
+{
+    position: relative;
+
+    float: right;
+    /*left: 240px;*/ /*搜索div距左侧nav div距离*/
+
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    /*搜索框固定靠右10px*/
+
+    text-align: right;
+
+    align-content: right;
+}
+#searchform
+{
+    /*position: absolute;
+	right: 10px;*/
+    /*搜索form距导航栏右侧距离，实际为距div右边距离*/
+    margin-right: 5px;
+
+    text-align: left;
+
+    align-content: left;
+}
+#branding #searchform
+{
+    /*position: relative;
+	right: 10px;*/
+    top: -7.6em;
+
+    text-align: right;
+}
+/*#branding #searchform div, #nav-top-search #searchform div  
+{
+	margin: 0;
+}*/
+
+#branding #s,
+#nav-top-search #s
+{
+    width: 50px;
+    /*框内search文字左padding大小*/
+    margin-left: 0;
+    padding-right: 30px;
+    padding-left: 12px;
+
+    -webkit-transition-timing-function: ease;
+       -moz-transition-timing-function: ease;
+         -o-transition-timing-function: ease;
+    -webkit-transition-duration: 400ms;
+       -moz-transition-duration: 400ms;
+         -o-transition-duration: 400ms;
+    -webkit-transition-property: width, background;
+       -moz-transition-property: width, background;
+         -o-transition-property: width, background;
+
+    background-color: #fff;
+}
+#branding #s:focus,
+#nav-top-search #s:focus
+{
+    /*聚焦之后所搜框长度*/
+    width: 120px;
+    /*外部边框为0，边框不显示高亮*/
+    margin-left: 0;
+
+    outline: 0;
+}
+#branding #searchsubmit,
+#nav-top-search #searchsubmit
+{
+    display: none;
+    /*提交按钮不显示*/
+}
+#search-subimit
+{
+    position: absolute;
+    z-index: 9999;
+    top: 2px;
+    right: 2px;
+
+    display: block;
+
+    width: 29px;
+    height: 29px;
+    margin-right: 5px;
+
+    cursor: pointer;/*鼠标变为手指*/
+    transition: left .3s ease;
+
+    border: hidden;
+    -moz-border-radius: 50%;
+         border-radius: 50%;
+    background-color: #fff;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjE5cHgiIGhlaWdodD0iMTlweCIgdmlld0JveD0iMCAwIDE5IDE5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxOSAxOSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBmaWxsPSIjNzc3Nzc3IiBkPSJNMTcuNjMyLDE2Ljk1NWwtNC43NjEtNC43NjJjMS4xMDktMS4xODgsMS43OTUtMi43NzYsMS43OTUtNC41MjdjMC0zLjY2Ny0yLjk4Mi02LjY0OC02LjY0OS02LjY0OA0KCWMtMy42NjcsMC02LjY0OSwyLjk4MS02LjY0OSw2LjY0N2MwLDMuNjY3LDIuOTgyLDYuNjQ3LDYuNjQ5LDYuNjQ3YzEuMzkxLDAsMi42ODItMC40MzQsMy43NS0xLjE2NGw0LjgzNCw0LjgzNEwxNy42MzIsMTYuOTU1eg0KCSBNMi44MjQsNy42NjZjMC0yLjg2MiwyLjMzLTUuMTkxLDUuMTkyLTUuMTkxYzIuODY0LDAsNS4xOTIsMi4zMjksNS4xOTIsNS4xOTFjMCwyLjg2MS0yLjMyOCw1LjE5MS01LjE5Miw1LjE5MQ0KCUM1LjE1NCwxMi44NTUsMi44MjQsMTAuNTI3LDIuODI0LDcuNjY2eiIvPg0KPC9zdmc+DQo=);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 16px 16px;
+    box-shadow: none;
+
+    align-content: right;
+}
+button[type=submit]:focus,
+#search-subimit
+{
+    outline: 0;/*隐藏边框高亮*/
+}
