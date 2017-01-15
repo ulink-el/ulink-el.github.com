@@ -17,23 +17,23 @@ body
 
     width: auto;
     height: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 
-    text-align: left;
+    /*text-align: center;*/
 
     border: 0;
     border-top: 5px solid #333;
     border-bottom: 0;
-    background-color: #fff;
+    background-color: #ffe;
 }
 #main,
 .main,
 .contact-main
 {
     width: 1000px;
-    margin: 20px auto 0 auto;
-    padding: 20px 0 0 0;
+    margin: 40px auto 0 auto;
+    padding: 0;
     /*    -webkit-box-shadow: 0 0 5px #aaa;
        -moz-box-shadow: 0 0 5px #aaa;
             box-shadow: 0 0 5px #aaa;
