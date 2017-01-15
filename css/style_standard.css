@@ -31,7 +31,7 @@ body
 .main,
 .contact-main
 {
-    width: 940px;
+    width: 1000px;
     margin: 20px auto 0 auto;
     padding: 20px 0 0 0;
     /*    -webkit-box-shadow: 0 0 5px #aaa;
@@ -107,6 +107,7 @@ a:hover
     float: right;
 
     margin: 0;
+    display: none;
 }
 .facebook,
 .twitter,
@@ -158,7 +159,7 @@ a:hover
     position: absolute;
     bottom: 0;
 
-    width: 940px;
+    width: 1000px;
     height: auto;
     margin: 10px auto;
 
@@ -227,7 +228,7 @@ a:hover
     position: absolute;
     z-index: 9999;
     top: 50px;
-    left: 96px;
+    left: 98px;
 
     display: none;
 
@@ -254,7 +255,7 @@ a:hover
     本身不具有宽高，用这个把它变成块级元素，
     这样前面设置的宽和高就能起作用了*/
     margin: 0;
-    padding: 12px 40px 12px 30px;
+    padding: 12px 27px 12px 30px;
 
     text-align: left;
     text-decoration: none;
@@ -449,7 +450,7 @@ h2.head2
 {
     overflow: auto;/*margin-right不超出*/
 
-    width: 960px;/*margin-right不超出*/
+    width: 1020px;/*margin-right不超出*/
     margin: 0;
     padding: 0;
 }
@@ -460,7 +461,7 @@ h2.head2
     float: left;
     overflow: hidden;
 
-    width: 218px;
+    width: 233px;
     /*height: 300px;*/
     margin: 0 20px 20px 0;
 
@@ -766,7 +767,7 @@ h2.head2
 {
     float: left;
 
-    width: 940px;
+    width: 1000px;
     /*border-left: 2px solid #555;*/
 }
 /*products css end*/
@@ -779,7 +780,7 @@ h2.head2
 
     text-align: right;
 
-    background-color: #333;
+    background-color: #222;
 }
 #address
 {
@@ -790,6 +791,7 @@ h2.head2
 #contact
 {
     float: right;
+    display: none;
 
     width: 35%;
 }
@@ -854,7 +856,7 @@ h2.head2
 
     overflow: hidden;
 
-    width: 940px;
+    width: 1000px;
     height: 50px;
     margin: 0 auto;
 
@@ -1124,7 +1126,7 @@ ul.product-info li a:hover
 {
     font-size: 59px;
 
-    width: 940px;
+    width: 1000px;
     margin: 0 auto;
 
     text-align: center;

@@ -31,7 +31,7 @@
     font-weight: normal;
     line-height: 25px;
 
-    width: 800px;
+    width: 1000px;
     margin: 0 auto 70px auto;
 
     text-align: left;
@@ -76,9 +76,10 @@ button
 
 .nav
 {
+    overflow: auto;
     font-size: 33px;
 
-    width: 960px;
+    width: 1020px;
     margin: 0 auto;
 }
 /* Nav elements */
@@ -89,12 +90,14 @@ button
 
     display: inline-block;
     float: left;
+    /*overflow: hidden;*/
 
-    width: 220px;
+    width: 242px;
     height: 600px;
     margin-top: 5%;
-    margin-right: 20px;
-    padding-bottom: 20%;
+    margin-right: 10px;
+    padding-bottom: 0;
+    border: 1px solid #fff;
 
     transition: background-color .3s ease-in-out;
 
@@ -105,14 +108,27 @@ button
 .nav-el:hover,
 .nav-el.active
 {
-    background-color: #027db6;
+    /*background-color: #027db6;*/
+    border-color: #027db6;
+
 }
 
 /*.nav-el.active_reverse
 {
     background-color: transparent;
 }*/
-
+.img1 {
+    background-image: url(../images/hk.jpg);
+}
+.img2 {
+    background-image: url(../images/qh.jpg);
+}
+.img3 {
+    background-image: url(../images/hs.jpg);
+}
+.img4 {
+    background-image: url(../images/ey.jpg);
+}
 /* Active button always on top */
 .nav-el.active,
 .nav-el.active_reverse
@@ -198,6 +214,7 @@ button
     width: 1em;
     display: none;
 }
+
 
 /******************************
 .nav-el.active anim
