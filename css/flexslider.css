@@ -21,7 +21,7 @@
 .flex-control-nav,
 .flex-direction-nav
 {
-    margin: 0;
+    margin: 20px auto;
     padding: 0;
 
     list-style: none;

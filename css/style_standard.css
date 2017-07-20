@@ -13,7 +13,7 @@ div
 /*@import url(http://fonts.googleapis.com/css?family=Slabo 27px);*/
 body
 {
-    font-family: 'Segoe UI','Microsoft Jhenghei',sans-serif;
+    font-family: "Helvitica Neue",Helvitica,Arial,"Hiragino Sans GB","Microsoft YaHei","Arial Regular","Microsoft JhengHei",sans-serif;
 
     width: auto;
     height: 100%;
@@ -23,7 +23,7 @@ body
     /*text-align: center;*/
 
     border: 0;
-    border-top: 5px solid #333;
+    /*border-top: 5px solid #333;*/
     border-bottom: 0;
     background-color: #ffe;
 }
@@ -31,8 +31,8 @@ body
 .main,
 .contact-main
 {
-    width: 1000px;
-    margin: 40px auto 0 auto;
+    max-width: 1220px;
+    margin: 0 auto;
     padding: 0;
     /*    -webkit-box-shadow: 0 0 5px #aaa;
        -moz-box-shadow: 0 0 5px #aaa;
@@ -62,14 +62,11 @@ a:hover
 #main-head
 {
     position: relative;
-
-    width: auto;
-    height: 160px;
-    margin: 0 auto;
-}
-#logo_sns
-{
-    width: auto;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100px;
+    background: #000;
 }
 #logo
 {
@@ -83,83 +80,13 @@ a:hover
 
     border: 0;
 }
-#slogan
-{
-    font-family: 'Segoe UI Light','Segoe UI','Microsoft Jhenghei',sans-serif;
-    font-size: 48px;
-    font-weight: lighter;
-    line-height: 60px;
 
-    float: left;
-
-    margin: 0;
-    padding: 3px 0 3px 20px;
-
-    color: #555;
-    border-left: 1px solid #999;
-}
-
-.social-icons
-{
-    position: relative;
-    right: 0;
-
-    float: right;
-
-    margin: 0;
-    display: none;
-}
-.facebook,
-.twitter,
-.skype,
-.googleplus
-{
-    display: inline-block;
-
-    margin: 0 0 0 5px;
-    padding: 0;
-}
-.social-icons a
-{
-    display: block;
-
-    width: 28px;
-    height: 28px;
-    margin: 0;
-    padding: 0;
-
-    -webkit-transition: all .4s ease-in-out;
-       -moz-transition: all .4s ease-in-out;
-         -o-transition: all .4s ease-in-out;
-            transition: all .4s ease-in-out;
-}
-.facebook a
-{
-    background: 0 0 no-repeat url(../icons/social/facebook.png);
-}
-.twitter a
-{
-    background: 0 0 no-repeat url(../icons/social/twitter.png);
-}
-.skype a
-{
-    background: 0 0 no-repeat url(../icons/social/skype.png);
-}
-.googleplus a
-{
-    background: 0 0 no-repeat url(../icons/social/googleplus.png);
-}
-.social-icons a:hover
-{
-    /*过渡*/
-    background-position: 0 -38px;
-}
 #nav-bar
 {
     position: absolute;
     bottom: 0;
 
-    width: 1000px;
+    width: 1220px;
     height: auto;
     margin: 10px auto;
 
@@ -183,7 +110,6 @@ a:hover
 #nav ul li,
 #nav ul ul li
 {
-    font-family: 'Slabo 27px'，'Segoe UI','Microsoft Jhenghei',sans-serif;
 
     float: left;
 
@@ -209,7 +135,7 @@ a:hover
     /*设置行距为30px，让文字在每行的中间位置。*/
 
     color: #fff;
-    background: url(../img/tagline.png) no-repeat right 50%;
+    /*background: url(../img/tagline.png) no-repeat right 50%;*/
 }
 #nav ul li a:hover
 {
@@ -355,7 +281,7 @@ input#s
     width: 160px;
     margin-left: 0;
 
-    outline: 10px solid #0279db;
+    outline: 1px solid #F6F6F4;
     outline-offset: inherit;
     /*webkit与mozilla引擎默认offset不同*/
 }
@@ -399,10 +325,6 @@ button[type=submit]:focus,
 }
 
 /*search end*/
-.slider-area
-{
-    width: auto;
-}
 
 /* header top end*/
 /**/
@@ -437,7 +359,6 @@ p.head1
 }
 h2.head2
 {
-    font-family: 'Segoe UI';
     font-size: 1.2em;
     font-weight: lighter;
 }
@@ -767,7 +688,7 @@ h2.head2
 {
     float: left;
 
-    width: 1000px;
+    width: 1220px;
     /*border-left: 2px solid #555;*/
 }
 /*products css end*/
@@ -856,7 +777,7 @@ h2.head2
 
     overflow: hidden;
 
-    width: 1000px;
+    width: 1220px;
     height: 50px;
     margin: 0 auto;
 
@@ -1044,7 +965,6 @@ ul.product-info li a:hover
 }
 .to input[type='text']
 {
-    font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: .85em;
 
     float: left;
@@ -1068,7 +988,6 @@ ul.product-info li a:hover
 .text input[type='text'],
 .text textarea
 {
-    font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: .85em;
 
     position: relative;
@@ -1094,7 +1013,6 @@ ul.product-info li a:hover
 }
 .form-submit input[type='submit']
 {
-    font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: .95em;
     font-weight: normal;
     font-weight: 100;
@@ -1126,7 +1044,7 @@ ul.product-info li a:hover
 {
     font-size: 59px;
 
-    width: 1000px;
+    width: 1220px;
     margin: 0 auto;
 
     text-align: center;
