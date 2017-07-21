@@ -25,24 +25,14 @@ body
     border: 0;
     /*border-top: 5px solid #333;*/
     border-bottom: 0;
-    background-color: #ffe;
+    background-color: #EDEDED;
 }
-#main,
-.main,
-.contact-main
-{
-    max-width: 1220px;
-    margin: 0 auto;
-    padding: 0;
-    /*    -webkit-box-shadow: 0 0 5px #aaa;
-       -moz-box-shadow: 0 0 5px #aaa;
-            box-shadow: 0 0 5px #aaa;
 
-         -o-box-shadow: 0 0 5px #aaa;*/
-}
-.main
+#main
 {
     padding: 0;
+    margin: 0 auto;
+    max-width: 1220px;
 }
 div
 {
@@ -64,44 +54,41 @@ a:hover
     position: relative;
     top: 0;
     z-index: 10;
-    width: 100%;
     height: 100px;
-    background: #000;
+    background: #1a1a1a;
+    box-shadow: 0 1px 1px #121212;
+    margin: 0;
 }
 #logo
 {
     float: left;
 
-    margin-right: 20px;
+    margin-right: 50px;
+    height: 40px;
+    margin: 30px 0;
+    padding: 0;
+}
+#nav-bar
+{
+    width: 1220px;
+    margin: 0 auto;
 }
 #logo img
 {
-    width: 60px;
+    width: 40px;
 
     border: 0;
-}
-
-#nav-bar
-{
-    position: absolute;
-    bottom: 0;
-
-    width: 1220px;
-    height: auto;
-    margin: 10px auto;
-
-    background-color: #333;
 }
 #nav
 {
     float: left;
+    height: 80px;
+    margin: auto 0 auto 600px;
 }
 #nav ul
 {
     z-index: 9999;
-
-    height: auto;
-    margin: 0;
+    margin: auto 0;
     padding: 0;
 
     list-style: none;
@@ -113,7 +100,7 @@ a:hover
 
     float: left;
 
-    margin: 0;
+    margin:auto 0;
     padding: 0;
     /*让li元素 左浮动*/
 }
@@ -128,13 +115,13 @@ a:hover
     这样前面设置的宽和高就能起作用了*/
 
     margin: 0;
-    padding: 18px 30px;
+    padding: 43px 30px;
 
     text-align: center;
     text-decoration: none;
     /*设置行距为30px，让文字在每行的中间位置。*/
 
-    color: #fff;
+    color: #c8c8c8;
     /*background: url(../img/tagline.png) no-repeat right 50%;*/
 }
 #nav ul li a:hover
@@ -146,8 +133,7 @@ a:hover
             transition: all .4s ease-in-out;
 
     color: #fff;
-    background-color: #0277bd;
-    background-image: none ;
+    background-color: #0277bd ;
 }
 #nav ul ul
 {
@@ -199,7 +185,7 @@ a:hover
 
     float: right;
 
-    margin: 10px;
+    margin: 35px 10px;
     /*搜索框固定靠右10px*/
 
     text-align: right;
@@ -211,6 +197,7 @@ input[type=password],
 textarea
 {
     border: 0;
+    border-radius: 15px;
     background: #fff;
     /*搜索框内阴影 start*/
     /*-moz-box-shadow: inset 2px 2px 10px rgba(0,0,0,0.1);
@@ -325,6 +312,8 @@ button[type=submit]:focus,
 }
 
 /*search end*/
+
+
 
 /* header top end*/
 /**/
