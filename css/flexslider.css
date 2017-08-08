@@ -31,9 +31,9 @@
 
 .flexslider
 {
-    width: auto;
-    margin: 0 auto;
     padding: 0;
+    margin: 0 auto;
+    max-width: 1220px;
 /*         -webkit-box-shadow: 0 0 5px #aaa;
        -moz-box-shadow: 0 0 5px #aaa;
             box-shadow: 0 0 5px #aaa;
@@ -99,7 +99,7 @@ html[xmlns] .slides
 
     margin: 0 auto;
 
-    background: #fff;
+    background: #ededed;
 }
 .loading .flex-viewport
 {

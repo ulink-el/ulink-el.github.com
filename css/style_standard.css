@@ -13,27 +13,21 @@ div
 /*@import url(http://fonts.googleapis.com/css?family=Slabo 27px);*/
 body
 {
-    font-family: "Helvitica Neue",Helvitica,Arial,"Hiragino Sans GB","Microsoft YaHei","Arial Regular","Microsoft JhengHei",sans-serif;
+    font-family: 'Helvitica Neue',Helvitica,Arial,'Hiragino Sans GB','Microsoft YaHei','Arial Regular','Microsoft JhengHei',sans-serif;
 
     width: auto;
     height: 100%;
     margin: 0 auto;
     padding: 0;
-
     /*text-align: center;*/
 
     border: 0;
     /*border-top: 5px solid #333;*/
     border-bottom: 0;
-    background-color: #EDEDED;
+    background-color: #ededed;
 }
 
-#main
-{
-    padding: 0;
-    margin: 0 auto;
-    max-width: 1220px;
-}
+
 div
 {
     display: block;
@@ -41,31 +35,33 @@ div
 a,
 a:visited
 {
-    color: #0277bd;
+    color: #5079d9;
 }
 a:hover
 {
-    color: #039be5;
+    color: #5079d9;
 }
 /* header top start*/
 
 #main-head
 {
     position: relative;
-    top: 0;
     z-index: 10;
+    top: 0;
+
     height: 100px;
+    margin: 0;
+
     background: #1a1a1a;
     box-shadow: 0 1px 1px #121212;
-    margin: 0;
 }
 #logo
 {
     float: left;
 
-    margin-right: 50px;
     height: 40px;
     margin: 30px 0;
+    margin-right: 50px;
     padding: 0;
 }
 #nav-bar
@@ -82,25 +78,26 @@ a:hover
 #nav
 {
     float: left;
+
     height: 80px;
-    margin: auto 0 auto 600px;
+    margin: auto 0 auto 540px;
 }
 #nav ul
 {
     z-index: 9999;
+
     margin: auto 0;
     padding: 0;
 
     list-style: none;
-    /*background-color: #0277bd;*/
+    /*background-color: #5079d9;*/
 }
 #nav ul li,
 #nav ul ul li
 {
-
     float: left;
 
-    margin:auto 0;
+    margin: auto 0;
     padding: 0;
     /*让li元素 左浮动*/
 }
@@ -133,7 +130,7 @@ a:hover
             transition: all .4s ease-in-out;
 
     color: #fff;
-    background-color: #0277bd ;
+    background-color: #5079d9 ;
 }
 #nav ul ul
 {
@@ -268,7 +265,7 @@ input#s
     width: 160px;
     margin-left: 0;
 
-    outline: 1px solid #F6F6F4;
+    outline: 1px solid #f6f6f4;
     outline-offset: inherit;
     /*webkit与mozilla引擎默认offset不同*/
 }
@@ -351,16 +348,84 @@ h2.head2
     font-size: 1.2em;
     font-weight: lighter;
 }
+.main-show
+{
+    /*background: #222;*/
+}
 .show
 {
+    max-width: 1220px;
     /*    overflow: auto;*/
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
+    padding: 30px 0;
+    /*background: #222;*/
+}
+#main_x .media_line
+{
+    background: #3a3a3a;
+}
+.media_line
+{
+    position: relative;
+    top: 11px;
+
+    display: block;
+
+    width: 1220px;
+    height: 1px;
+    margin: 0 auto;
+
+    content: '';
+
+    background: #dbdedf;
+}
+#main_x .x_title
+{
+    /*background: #222;*/
+    color: #f1f1f1;
+}
+.media_title
+{
+    font-size: 24px;
+    line-height: 24px;
+
+    position: relative;
+
+    width: 160px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    background: #ededed;
+}
+#main_x .diamond
+{
+    background: #f1f1f1;
+}
+.media_title .diamond
+{
+    position: relative;
+    top: -5px;
+
+    display: inline-block;
+
+    width: 8px;
+    height: 8px;
+    margin: 0 20px;
+
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+
+    background: #222;
 }
 .show-col
 {
     overflow: auto;/*margin-right不超出*/
 
-    width: 1020px;/*margin-right不超出*/
+    width: 1240px;/*margin-right不超出*/
     margin: 0;
     padding: 0;
 }
@@ -371,11 +436,21 @@ h2.head2
     float: left;
     overflow: hidden;
 
-    width: 233px;
+    width: 288px;
     /*height: 300px;*/
     margin: 0 20px 20px 0;
 
-    border: 1px solid #ddd;
+    -webkit-transform: perspective(1px) translateZ(0);
+       -moz-transform: perspective(1px) translateZ(0);
+        -ms-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+
+    border: 1px solid #efefef;
+    -webkit-box-shadow: 0 0 1px transparent;
+       -moz-box-shadow: 0 0 1px transparent;
+            box-shadow: 0 0 1px transparent;
+
+        -ms-box-shadow: 0 0 1px transparent;
 }
 .prdt-show:hover
 {
@@ -386,8 +461,8 @@ h2.head2
             transition: all .8s ease;
 
     color: #fff;
-    border-color: #0279db;
-    /*background-color: #0279db;*/
+    border-color: #5079d9;
+    /*box-shadow: 0px 1px 1px 1px #222;*/
 }
 .prdt-show:hover .title
 {
@@ -429,7 +504,7 @@ h2.head2
     bottom: 0;
     left: 0;
 
-    overflow: hidden;
+    overflow: visible;
 
     width: 100%;
     height: 80px;
@@ -445,7 +520,7 @@ h2.head2
     height: 100%;
     padding: 3px 10px;
 
-    background-color: #0279db;
+    background-color: #5079d9;
 }
 .description p
 {
@@ -471,7 +546,7 @@ h2.head2
 {
     text-align: left;
 
-    color: #0279db;
+    color: #5079d9;
 }
 .show-main h3
 {
@@ -522,7 +597,7 @@ h2.head2
     text-transform: uppercase;
 
     color: #fff;
-    background: #039be5;
+    background: #5079d9;
     -webkit-box-shadow: 0 0 5px #555;
        -moz-box-shadow: 0 0 5px #555;
             box-shadow: 0 0 5px #555;
@@ -604,8 +679,8 @@ h2.head2
 
     text-align: left;
 
-    color: #0277bd;
-    border-bottom: 2px solid #0277bd;
+    color: #5079d9;
+    border-bottom: 2px solid #5079d9;
 }
 .prdt-sider
 {
@@ -658,7 +733,7 @@ h2.head2
 
     text-decoration: none;
 
-    color: #0277bd;
+    color: #5079d9;
     border-right: none;
     border-radius: 2px;
     -webkit-box-shadow: 0 0 10px #aaa;
@@ -670,8 +745,8 @@ h2.head2
 .prdt-sort li a:hover
 {
     color: #fff;
-    border-right: 20px solid #0277bd;
-    background-color: #0277bd;
+    border-right: 20px solid #5079d9;
+    background-color: #5079d9;
 }
 .prdt-main
 {
@@ -700,8 +775,8 @@ h2.head2
 }
 #contact
 {
-    float: right;
     display: none;
+    float: right;
 
     width: 35%;
 }
@@ -972,7 +1047,7 @@ ul.product-info li a:hover
 .text input[type='text'],
 .text textarea:hover
 {
-    border-color: #0277bd;
+    border-color: #5079d9;
 }
 .text input[type='text'],
 .text textarea
@@ -1025,7 +1100,7 @@ ul.product-info li a:hover
 }
 .form-submit input[type='submit']:hover
 {
-    background: #0277bd;
+    background: #5079d9;
 }
 
 
