@@ -7,16 +7,6 @@
     <div class="section">{{ content }}</div>
   </div>
 
-  <div class="container">
-    <div class="section">
-      {% if site.duoshuo_shortname and page.comments %}
-      <!-- 多说评论框 start -->
-      <div class="ds-thread section" data-thread-key="{{ page.postid }}" data-title="{{ page.title }}" data-url="{{ post.url | prepend: site.baseurl }}"></div>
-      <!-- 多说评论框 end -->
-      {% endif %}</div>
-  </div>
   {% include footer.html %}
-
-  {% if page.comments %}{% include duoshuo_scripts.html %}{% endif %}
 </body>
 </html>
