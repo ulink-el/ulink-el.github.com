@@ -1,0 +1,123 @@
+---
+layout: default
+---
+<div class="post">
+
+	<header class="post-header">
+		<h1 class="post-title">{{ page.title }}</h1>
+		<div class="divider"></div>
+		<!--     <p class="post-meta">
+		{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+	</p>
+	-->
+	<ul class="postinfo grey-text">
+		<li class="posttag"> <i class="mdi-maps-local-offer nbsp-1 grey-text post-i"></i>
+			{% for tags in page.tags %}
+			<a class="grey-text" href="{{ site.baseurl }}/tags/index.html#{{tags}}-ref" title="标签">{{tags}}</a>
+			{% endfor %}
+		</li>
+		<li class="postcat"> <i class="mdi-file-folder nbsp-1 grey-text post-i"></i>
+			<a class="grey-text" href="{{ site.baseurl }}/categories/index.html#{{ page.categories }}-ref" title="分类">{{ page.categories}}</a>
+		</li>
+		<li class="posttime">
+			<i class="mdi-action-today nbsp-1 grey-text post-i"></i>
+			{{ page.date | date: "%b %-d, %Y" }}
+		</li>
+		<li class="postcomment">
+			<i class="mdi-communication-comment nbsp-1 grey-text post-i"></i>
+			<span class="ds-thread-count" data-thread-key="{{ page.postid }}" data-count-type="comments"></span>
+		</li>
+		<div class="clear"></div>
+	</ul>
+</header>
+<!-- 正文开始 -->
+<article class="post-content post-ulol"  id="{{ page.postid }}">{{ content }}</article>
+<!-- 正文结束 -->
+<div style="margin-bottom:100px"></div>
+<!-- 标签云开始 -->
+<div class="divider"></div>
+<div>
+	{% for tags in site.tags %}
+	<a href="{{ site.baseurl }}/tags/index.html#{{ tags | first }}-ref" class="waves-effect waves-light grey-text text-darken-3 tags-cloud" >
+		{{ tags | first }}
+		<span class="cata-num">{{ tags | last | size }}</span>
+	</a>
+	{% endfor %}
+	<br>
+	<br></div>
+<!-- 标签云结束	 -->
+
+<!-- 页面导航开始 -->
+<div class="divider"></div>
+<div class="post-nav">
+	<div class="pre">
+		{% if page.previous %}
+		<a title="更早一篇" href="{{ page.previous.url }}">
+			<i class="mdi-navigation-chevron-left"></i>
+			{{page.previous.title}}
+		</a>
+		{% endif %}
+	</div>
+	<div class="next">
+		{% if page.next %}
+		<a title="更新一篇" href="{{ page.next.url }}">
+			<i class="mdi-navigation-chevron-right"></i>
+			{{page.next.title}}
+		</a>
+		{% endif %}
+	</div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="divider"></div>
+<!-- 页面导航结束 -->
+
+<!-- 分享按钮 -->
+<!-- {% if page.comments %}
+<div class="section"></div>
+<div class="container left">
+<div class="ds-share flat" data-thread-key="{{ page.postid }}" data-title="{{ page.title }}" data-images="" data-content="" data-url="http://ulink-el.com{{ page.url }}">
+	<div class="ds-share-inline">
+		<ul  class="ds-share-icons-16">
+			<li data-toggle="ds-share-icons-more">
+				<a class="ds-more" href="javascript:void(0);">分享到：</a>
+			</li>
+			<li>
+				<a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a>
+			</li>
+			<li>
+				<a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a>
+			</li>
+			<li>
+				<a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a>
+			</li>
+		</ul>
+		<div class="ds-share-icons-more"></div>
+	</div>
+</div>
+</div>
+{% endif %} -->
+
+<!-- 固定导航按钮 -->
+<div class="fixed-action-btn" style="bottom: 24px; right: 24px;">
+<a class="btn-floating btn-large waves-effect waves-light red darken-2 ">
+	<i class="large mdi-content-add"></i>
+</a>
+<ul>
+	<li>
+		<a class="btn-floating btn-large waves-effect waves-light blue darken-1" href="javascript:pageScroll();">
+			<i class="mdi-file-file-upload"></i>
+		</a>
+	</li>
+	<li>
+		<a class="btn-floating btn-large waves-effect waves-light blue darken-1" href="{{ page.next.url }}">
+			<i class="mdi-navigation-arrow-forward"></i>
+		</a>
+	</li>
+	<li>
+		<a class="btn-floating btn-large waves-effect waves-light blue darken-1" href="{{ page.previous.url }}">
+			<i class="mdi-navigation-arrow-back"></i>
+		</a>
+	</li>
+</ul>
+</div>

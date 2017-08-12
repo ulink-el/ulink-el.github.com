@@ -9,6 +9,14 @@
  * Contributing author: Tyler Smith (@mbmufffin)
  */
 /* Browser Resets */
+.slider-area
+{
+    width: auto;
+    margin: 0;
+
+    /*background-color: #000;*/
+}
+
 
 .flex-container a:active,
 .flexslider a:active,
@@ -21,7 +29,7 @@
 .flex-control-nav,
 .flex-direction-nav
 {
-    margin: 20px auto;
+    margin: 15px auto;
     padding: 0;
 
     list-style: none;
@@ -269,10 +277,4 @@ html[xmlns] .slides
         opacity: 1;
     }
 }
-.slider-area
-{
-    width: auto;
-    margin: 0;
 
-    /*background-color: #000;*/
-}

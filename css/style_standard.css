@@ -1,5 +1,5 @@
+/*默认样式 start*/
 /*显示属性、盒模型、文本属性、其他属性*/
-
 header,
 footer,
 article,
@@ -26,8 +26,6 @@ body
     border-bottom: 0;
     background-color: #ededed;
 }
-
-
 div
 {
     display: block;
@@ -41,8 +39,14 @@ a:hover
 {
     color: #5079d9;
 }
-/* header top start*/
+/*默认样式 end*/
 
+
+
+
+
+
+/* header top start*/
 #main-head
 {
     position: relative;
@@ -50,7 +54,7 @@ a:hover
     top: 0;
 
     height: 100px;
-    margin: 0;
+    margin: 0 0 15px 0;
 
     background: #1a1a1a;
     box-shadow: 0 1px 1px #121212;
@@ -80,7 +84,7 @@ a:hover
     float: left;
 
     height: 80px;
-    margin: auto 0 auto 540px;
+    margin: auto 0 auto 480px;
 }
 #nav ul
 {
@@ -174,6 +178,12 @@ a:hover
     background-image: none;
 }
 /*header top end*/
+
+
+
+
+
+
 
 /*search start*/
 #search
@@ -309,12 +319,105 @@ button[type=submit]:focus,
 }
 
 /*search end*/
-
-
-
 /* header top end*/
-/**/
 
+
+
+
+
+
+
+
+/*nav2 start*/
+.nav2
+{
+    z-index: 9999;
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 0;
+
+    opacity: .98;
+    background: #ededed;
+
+    filter: alpha(opacity=95);/*兼容IE8以下浏览器*/
+}
+.nav2-sub
+{
+    line-height: 28px;
+
+    overflow: hidden;
+
+    width: 1220px;
+    margin: 0 auto;
+
+    opacity: .98;
+
+    filter: alpha(opacity=95);
+    /*    height: 60px;
+    border-bottom: 1px solid #dadada;
+    box-shadow: 0 2px 4px rgba(0,0,0,.04);
+    background-image: -webkit-linear-gradient(#fff,#f1f1f1);
+    background-image: linear-gradient(#fff,#f1f1f1);*/
+}
+.nav2 .nav2-sub ul
+{
+    padding: 0;
+}
+.nav2 .nav2-sub ul li:before
+{
+    position: absolute;
+    top: 13px;
+    left: 0;
+
+    width: 2px;
+    height: 2px;
+
+    content: ' ';
+
+    opacity: .6;
+}
+.nav2-sub ul
+{
+    float: left;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+.nav2-sub ul li
+{
+    float: left;
+
+    padding: 0 30px;
+
+    list-style: none;
+}
+.nav2-active
+{
+    padding-left: 10px;
+}
+.nav2-sub ul li a
+{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.75;
+
+    text-decoration: none;
+
+    color: #6d6d6d;
+}
+.nav2-sub ul li a:hover
+{
+    color: #ff0056;
+}
+/*nav2 end*/
+
+
+
+
+
+/*产品展示样式 start*/
 h2.head
 {
     font-size: 2em;
@@ -755,7 +858,13 @@ h2.head2
     width: 1220px;
     /*border-left: 2px solid #555;*/
 }
-/*products css end*/
+/*产品样式 end*/
+
+
+
+
+
+
 /* foot top start*/
 
 #foot
@@ -821,78 +930,6 @@ h2.head2
     width: auto;
     height: 50px;
     margin: 0 auto;
-}
-.product-head2
-{
-    z-index: 9999;
-
-    width: 100%;
-    margin: 0 auto;
-
-    opacity: .95;
-    border-bottom: 1px solid #cdcdcd;
-    background-color: #fff ;
-
-    filter: alpha(opacity=95);/*兼容IE8以下浏览器*/
-}
-.product-head3
-{
-    line-height: 50px;
-
-    overflow: hidden;
-
-    width: 1220px;
-    height: 50px;
-    margin: 0 auto;
-
-    opacity: .95;
-    background-color: #fff ;
-
-    filter: alpha(opacity=95);/*兼容IE8以下浏览器*/
-}
-.product-name
-{
-    font-size: 24px;
-    font-weight: lighter;
-
-    float: left;
-
-    margin: auto 0;
-    padding-left: 20px;
-
-    text-align: left;
-}
-.product-name a
-{
-    text-decoration: none;
-}
-ul.product-info
-{
-    float: right;
-
-    margin: auto 0;
-}
-ul.product-info li
-{
-    float: left;
-
-    margin: 0 30px;
-
-    list-style: none;
-}
-ul.product-info li a
-{
-    font-size: 1em;
-    font-weight: normal;
-    line-height: 1.75;
-
-    text-decoration: none;
-
-    color: #6d6d6d;
-}
-ul.product-info li a:hover
-{
-    color: #ff0056;
 }
 .product-content
 {
